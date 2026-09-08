@@ -44,6 +44,10 @@ Either way, `~/.claude/skills/lecture-notes` and `~/.codex/skills/lecture-notes`
 
 Paste or upload a transcript (optionally with slides/handouts/syllabus) and ask for notes, a summary, or a study guide — the skill triggers automatically.
 
+### Flashcards (Claude Code)
+
+After notes exist, run `/lecture-anki <notes.docx|notes.json>` to turn the Key Topics into an Anki-importable deck (`.csv`, one card per topic). On-demand only — a normal notes run never makes a deck.
+
 ## Development
 
 The skill lives in `skills/lecture-notes/`. Its `.docx` builder and test are in `skills/lecture-notes/scripts/`:
@@ -51,7 +55,10 @@ The skill lives in `skills/lecture-notes/`. Its `.docx` builder and test are in 
 ```bash
 python -m pip install -r skills/lecture-notes/scripts/requirements.txt
 python skills/lecture-notes/scripts/test_build_docx.py   # -> "ok"
+python skills/lecture-notes/scripts/test_anki_export.py   # -> "ok"
 ```
+
+The `/lecture-anki` slash command lives in `commands/lecture-anki.md`.
 
 Releasing: bump `version` in **both** `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` (they must match), then `claude plugin validate .` before pushing.
 
