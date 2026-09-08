@@ -13,7 +13,13 @@ See [`SKILL.md`](SKILL.md) for the full workflow and [`assets/example-output.md`
 
 ## Install
 
-Drop this folder into your Claude Code skills directory (e.g. `~/.claude/skills/lecture-notes`), or install via a plugin marketplace if you package it as one.
+```bash
+git clone https://github.com/IftekharulHaque/lecture-notes-skill.git
+cd lecture-notes-skill
+./install.sh
+```
+
+Symlinks this folder into `~/.claude/skills/lecture-notes`. `git pull` later to update.
 
 ## Usage
 
