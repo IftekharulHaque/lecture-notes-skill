@@ -27,7 +27,7 @@ cd lecture-notes-skill
 ./install.sh
 ```
 
-Either way it lands at `~/.claude/skills/lecture-notes`.
+Either way it lands at `~/.claude/skills/lecture-notes` and `~/.codex/skills/lecture-notes` (Codex uses the same `SKILL.md` convention as Claude Code).
 
 ## Usage
 
