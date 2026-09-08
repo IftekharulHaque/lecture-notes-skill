@@ -1,6 +1,6 @@
 # Lecture Notes Skill
 
-A Claude skill that turns a raw lecture/class/seminar transcript into clean, chronological study notes as a Word document (`.docx`) — with a key-topics summary and a to-do list of anything the lecturer assigned.
+An agent skill for Claude Code and Codex CLI that turns a raw lecture/class/seminar transcript into clean, chronological study notes as a Word document (`.docx`) — with a key-topics summary and a to-do list of anything the lecturer assigned.
 
 ## What it does
 
@@ -19,7 +19,7 @@ Directly, no clone needed:
 curl -fsSL https://raw.githubusercontent.com/IftekharulHaque/lecture-notes-skill/main/install.sh | bash
 ```
 
-Or from a local clone (symlinked instead of copied, so `git pull` updates it in place):
+That clones into `~/.local/share/lecture-notes-skill`. Or work from your own clone instead:
 
 ```bash
 git clone https://github.com/IftekharulHaque/lecture-notes-skill.git
@@ -27,7 +27,7 @@ cd lecture-notes-skill
 ./install.sh
 ```
 
-Either way it lands at `~/.claude/skills/lecture-notes` and `~/.codex/skills/lecture-notes` (Codex uses the same `SKILL.md` convention as Claude Code).
+Either way, `~/.claude/skills/lecture-notes` and `~/.codex/skills/lecture-notes` are symlinked at the checkout — Codex reads the same `SKILL.md` layout as Claude Code, and `git pull` in the checkout updates both. Delete either symlink to uninstall for that agent.
 
 ## Usage
 
