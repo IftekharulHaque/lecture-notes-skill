@@ -1,0 +1,13 @@
+{
+  "name": "lecture-notes",
+  "version": "1.0.0",
+  "description": "Turn a raw lecture, class, or meeting transcript into clean chronological Word-document notes with a key-topics summary and a to-do checklist.",
+  "author": {
+    "name": "Iftekharul Haque",
+    "url": "https://github.com/IftekharulHaque"
+  },
+  "homepage": "https://github.com/IftekharulHaque/lecture-notes-skill",
+  "repository": "https://github.com/IftekharulHaque/lecture-notes-skill",
+  "license": "MIT",
+  "keywords": ["lecture", "notes", "transcript", "docx", "study", "skills"]
+}

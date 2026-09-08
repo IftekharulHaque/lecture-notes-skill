@@ -1,0 +1,26 @@
+{
+  "name": "lecture-notes-skill",
+  "description": "Lecture-notes skill for Claude Code and Codex",
+  "owner": {
+    "name": "Iftekharul Haque",
+    "url": "https://github.com/IftekharulHaque"
+  },
+  "plugins": [
+    {
+      "name": "lecture-notes",
+      "source": "./",
+      "skills": ["./skills/lecture-notes"],
+      "description": "Turn a raw lecture, class, or meeting transcript into clean chronological Word-document notes with a key-topics summary and a to-do checklist.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Iftekharul Haque",
+        "url": "https://github.com/IftekharulHaque"
+      },
+      "category": "productivity",
+      "keywords": ["lecture", "notes", "transcript", "docx", "study", "skills"],
+      "homepage": "https://github.com/IftekharulHaque/lecture-notes-skill",
+      "repository": "https://github.com/IftekharulHaque/lecture-notes-skill",
+      "license": "MIT"
+    }
+  ]
+}

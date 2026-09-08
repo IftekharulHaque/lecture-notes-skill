@@ -9,9 +9,18 @@ An agent skill for Claude Code and Codex CLI that turns a raw lecture/class/semi
 - Produces a `.docx` with an overview, key topics, chronological notes, and a checklist of to-dos.
 - Works for meeting-style recordings too, not just lectures.
 
-See [`SKILL.md`](SKILL.md) for the full workflow and [`assets/example-output.md`](assets/example-output.md) for a worked example.
+See [`SKILL.md`](skills/lecture-notes/SKILL.md) for the full workflow and [`assets/example-output.md`](skills/lecture-notes/assets/example-output.md) for a worked example.
 
 ## Install
+
+### Claude Code (plugin)
+
+```
+/plugin marketplace add IftekharulHaque/lecture-notes-skill
+/plugin install lecture-notes@lecture-notes-skill
+```
+
+### Codex, or a script-based install
 
 Directly, no clone needed:
 
