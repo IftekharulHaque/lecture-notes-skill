@@ -13,13 +13,21 @@ See [`SKILL.md`](SKILL.md) for the full workflow and [`assets/example-output.md`
 
 ## Install
 
+Directly, no clone needed:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/IftekharulHaque/lecture-notes-skill/main/install.sh | bash
+```
+
+Or from a local clone (symlinked instead of copied, so `git pull` updates it in place):
+
 ```bash
 git clone https://github.com/IftekharulHaque/lecture-notes-skill.git
 cd lecture-notes-skill
 ./install.sh
 ```
 
-Symlinks this folder into `~/.claude/skills/lecture-notes`. `git pull` later to update.
+Either way it lands at `~/.claude/skills/lecture-notes`.
 
 ## Usage
 
