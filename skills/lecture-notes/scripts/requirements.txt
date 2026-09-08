@@ -1,0 +1,5 @@
+# Runtime deps for the lecture-notes skill's helper scripts and source reading.
+python-docx>=1.1    # build_docx.py — styled .docx output
+# Optional, only when the matching input formats appear:
+#   python-pptx>=0.6   # reading slide decks (.pptx)
+#   pypdf>=4.0         # reading PDFs when pdftotext isn't available

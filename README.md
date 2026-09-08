@@ -20,6 +20,8 @@ See [`SKILL.md`](skills/lecture-notes/SKILL.md) for the full workflow and [`asse
 /plugin install lecture-notes@lecture-notes-skill
 ```
 
+Update later with `/plugin update lecture-notes@lecture-notes-skill` (plugin installs are cache snapshots, not a live git checkout — a `git pull` won't touch them).
+
 ### Codex, or a script-based install
 
 Directly, no clone needed:
@@ -41,6 +43,17 @@ Either way, `~/.claude/skills/lecture-notes` and `~/.codex/skills/lecture-notes`
 ## Usage
 
 Paste or upload a transcript (optionally with slides/handouts/syllabus) and ask for notes, a summary, or a study guide — the skill triggers automatically.
+
+## Development
+
+The skill lives in `skills/lecture-notes/`. Its `.docx` builder and test are in `skills/lecture-notes/scripts/`:
+
+```bash
+python -m pip install -r skills/lecture-notes/scripts/requirements.txt
+python skills/lecture-notes/scripts/test_build_docx.py   # -> "ok"
+```
+
+Releasing: bump `version` in **both** `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` (they must match), then `claude plugin validate .` before pushing.
 
 ## License
 
